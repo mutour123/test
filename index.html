@@ -1,7 +1,35 @@
 
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>microplan</title><link rel=stylesheet href=./static/normalize.css><link rel=stylesheet href=https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><style>html,body{
-        height: 100%;
-        font-size: 62.5%;
-        outline:none;
-    }</style><link href=./static/css/app.54bf59324e0fa8c0562ce5f5d4b5f0a8.css rel=stylesheet></head><body><div id=app></div><script src=static/jquery.js></script><script src=static/store.js></script><script type=text/javascript src=./static/js/manifest.69ef6a94be6ca41ffc4b.js></script><script type=text/javascript src=./static/js/vendor.7aee15025dea4f3ad4fd.js></script><script type=text/javascript src=./static/js/app.a28235c63a28bd8ebda9.js></script></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <title>microplan</title>
+        <link rel=stylesheet href=./static/normalize.css>
+        <link rel="manifest" href="./manifest.json">
+        <link rel=stylesheet href=https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous>
+        <style>
+            html,body{
+                height: 100%;
+                font-size: 62.5%;
+                outline:none;
+            }
+        </style>
+        <link href=./static/css/app.54bf59324e0fa8c0562ce5f5d4b5f0a8.css rel=stylesheet>
+</head>
+<body>
+    <div id=app></div>
+    <script src=static/jquery.js></script>
+    <script src=static/store.js></script>
+    <script type=text/javascript src=./static/js/manifest.69ef6a94be6ca41ffc4b.js></script>
+    <script type=text/javascript src=./static/js/vendor.7aee15025dea4f3ad4fd.js></script>
+    <script type=text/javascript src=./static/js/app.a28235c63a28bd8ebda9.js></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            // register service worker
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</body>
+</html>
 
